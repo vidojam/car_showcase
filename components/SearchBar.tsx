@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from 'react'
-import{ SearchManufacturer } from './'
+import SearchManufacturer from "./SearchManufacturer";
+
 
 const SearchBar = () => {
-  const [manufacturer, setManufacturer] = useState('');
+  const [manufacturer, setManuFacturer] = useState('');
 
   const handleSearch = () => {
 
@@ -15,8 +16,7 @@ const SearchBar = () => {
       <div className="searchbar__item">
         <SearchManufacturer 
           manufacturer={manufacturer} 
-          setManufacturer={setManufacturer}
-        
+          setManuFacturer={setManuFacturer}
         />
       </div>
     
@@ -24,4 +24,4 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default SearchBar;
