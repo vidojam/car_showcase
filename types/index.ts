@@ -2,15 +2,13 @@ import { MouseEventHandler } from "react";
 import { StringDecoder } from "string_decoder";
 
 export interface CustomButtonProps {
- title: string;
- containerStyles?: string;
- handleClick?:
- MouseEventHandler<HTMLButtonElement>; 
- btnType: "button" | "submit";
- car: string;
- textStyles?: string;
- rightIcon?: string;
- isDisabled?: boolean;
+  isDisabled?: boolean;
+  btnType?: "button" | "submit";
+  containerStyles?: string;
+  textStyles?: string;
+  title: string;
+  rightIcon?: string;
+  handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 export interface SearchManuFacturerProps {
