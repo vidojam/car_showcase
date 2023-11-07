@@ -3,9 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import { calculateCarRent, generateCarImageUrl } from "@utils";
-import { CarProps } from "@types";
-import CustomButton from "./Customsls";
+import { calculateCarRent } from "@/utils";
+import { CarProps } from "@/types";
+import CustomButton from "./CustomButton";
+import CarDetails from "./CarDetails";
+
 
 interface CarCardProps {
   car: CarProps;
@@ -75,7 +77,7 @@ const CarCard = ({ car }: CarCardProps) => {
         </div>
       </div>
 
-      {/* <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} /> */}
+      <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
     </div>
   );
 };
